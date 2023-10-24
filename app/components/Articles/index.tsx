@@ -117,8 +117,7 @@ export default class MultipleItems extends Component {
 
                     <Slider {...settings}>
                         {postData.map((items, i) => (
-                            <>
-                            <div key={i} >
+                            <React.Fragment key={i} >
 
                                 <div className='bg-white m-3 px-3 pt-3 pb-12 my-10 shadow-lg rounded-3xl relative'>
                                     <Image src={items.imgSrc} alt="gaby" width={389} height={262} className="inline-block m-auto" />
@@ -136,8 +135,7 @@ export default class MultipleItems extends Component {
 
                                 </div>
 
-                            </div>
-                            </>
+                            </React.Fragment>
                         ))}
                     </Slider>
                 </div>
