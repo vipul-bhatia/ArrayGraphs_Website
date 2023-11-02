@@ -17,53 +17,30 @@ interface DataType {
 
 const postData: DataType[] = [
     {
-        time: "5 min",
-        heading: 'We Launch Delia',
-        heading2: 'Webflow this Week!',
-        name: "Published on Startupon",
-        date: 'August 19, 2021',
-        imgSrc: '/images/articles/article.png',
+        time: "Know More",
+        heading: 'Daily social media posts!',
+        heading2: 'with ArrayGraphs',
+        name: "View on Linkdin",
+        date: 'September 30, 2023',
+        imgSrc: '/images/articles/article4.jpeg',
     },
     {
-        time: "5 min",
-        heading: 'We Launch Delia',
-        heading2: 'Webflow this Week!',
-        name: "Published on Startupon",
-        date: 'August 19, 2021',
-        imgSrc: '/images/articles/article2.png',
+        time: "Know More",
+        heading: 'Designs with ArrayGraphs',
+        heading2: 'Give your premium new look!',
+        name: "View on Linkdin",
+        date: 'September 12, 2023',
+        imgSrc: '/images/articles/article5.jpeg',
     },
     {
-        time: "5 min",
-        heading: 'We Launch Delia',
-        heading2: 'Webflow this Week!',
-        name: "Published on Startupon",
-        date: 'August 19, 2021',
-        imgSrc: '/images/articles/article3.png',
+        time: "Know More",
+        heading: 'Branding with ArrayGraphs',
+        heading2: 'Give your brand a new look!',
+        name: "View on Linkdin",
+        date: 'August 17 , 2023',
+        imgSrc: '/images/articles/article6.jpeg',
     },
-    {
-        time: "5 min",
-        heading: 'We Launch Delia',
-        heading2: 'Webflow this Week!',
-        name: "Published on Startupon",
-        date: 'August 19, 2021',
-        imgSrc: '/images/articles/article.png',
-    },
-    {
-        time: "5 min",
-        heading: 'We Launch Delia',
-        heading2: 'Webflow this Week!',
-        name: "Published on Startupon",
-        date: 'August 19, 2021',
-        imgSrc: '/images/articles/article2.png',
-    },
-    {
-        time: "5 min",
-        heading: 'We Launch Delia',
-        heading2: 'Webflow this Week!',
-        name: "Published on Startupon",
-        date: 'August 19, 2021',
-        imgSrc: '/images/articles/article3.png',
-    },
+
 ]
 
 // CAROUSEL SETTINGS
@@ -79,7 +56,7 @@ export default class MultipleItems extends Component {
             // centerMode: true,
             slidesToScroll: 2,
             arrows: false,
-            autoplay: false,
+            autoplay: true,
             speed: 500,
             cssEase: "linear",
             responsive: [
@@ -87,18 +64,12 @@ export default class MultipleItems extends Component {
                     breakpoint: 1200,
                     settings: {
                         slidesToShow: 2,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: false
                     }
                 },
                 {
                     breakpoint: 600,
                     settings: {
                         slidesToShow: 1,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: false
                     }
                 }
             ]
@@ -111,7 +82,7 @@ export default class MultipleItems extends Component {
 
                     <div className="text-center">
                         <h3 className="text-blue text-lg font-normal tracking-widest">ARTICLES</h3>
-                        <h3 className="text-4xl sm:text-6xl font-bold">Our latest post.</h3>
+                        <h3 className="text-4xl sm:text-6xl font-bold">Our Latest Feed</h3>
                     </div>
 
 
@@ -122,8 +93,8 @@ export default class MultipleItems extends Component {
                                 <div className='bg-white m-3 px-3 pt-3 pb-12 my-10 shadow-lg rounded-3xl relative'>
                                     <Image src={items.imgSrc} alt="gaby" width={389} height={262} className="inline-block m-auto" />
 
-                                    <Link href="/">
-                                        <h3 className="absolute bg-blue text-white hover:bg-black hover:shadow-xl py-3 px-6 rounded-full article-img">{items.time} read</h3>
+                                    <Link href="https://www.linkedin.com/company/arraygraphs">
+                                        <h3 className="absolute bg-blue text-white hover:bg-black hover:shadow-xl py-3 px-6 rounded-full article-img">{items.time}</h3>
                                     </Link>
                                     <h4 className='text-2xl font-bold pt-6 text-black'>{items.heading}</h4>
                                     <h4 className='text-2xl font-bold pt-1 text-black'>{items.heading2}</h4>

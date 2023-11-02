@@ -15,42 +15,37 @@ interface DataType {
 
 const postData: DataType[] = [
     {
-        name: "Robert Fox",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        name: "Vipul Bhatia",
+        profession: 'CEO, AIProStack Solutions',
+        comment: 'I want to express my gratitude to ArrayGraphs for their exceptional support in helping us achieve our goals. They are a valuable partner.',
         imgSrc: '/images/testimonial/user1.svg',
     },
     {
-        name: "Leslie Alexander",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        name: "Priyam Sekra",
+        profession: 'CEO, AIProStack Solutions',
+        comment: 'ArrayGraphs has been instrumental in our success. Their dedication to delivering high-quality marketing is commendable.',
         imgSrc: '/images/testimonial/user2.svg',
     },
     {
-        name: "Cody Fisher",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        name: "Shivam Vijayvargia",
+        profession: 'Software Engineer',
+        comment: 'I appreciate the innovative solutions provided by ArrayGraphs. Their expertise in designing & marketing is outstanding.',
         imgSrc: '/images/testimonial/user3.svg',
     },
     {
-        name: "Robert Fox",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
+        name: "Deepak Kumar",
+        profession: 'Lead Architect',
+        comment: 'ArrayGraphs has consistently met our design needs, contributing to the quality of our products.Their expertise is unbeatable.',
         imgSrc: '/images/testimonial/user1.svg',
     },
     {
-        name: "Leslie Alexander",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user2.svg',
+        name: "Radhe Thakur",
+        profession: 'CEO, Raff Works',
+        comment: 'Candidly, working with Array Graphs was an absolute game-changer for our project.Their artistic finesse and attention to detail in 3D modeling left us in awe.',
+        imgSrc: '/images/testimonial/user1.svg',
     },
-    {
-        name: "Cody Fisher",
-        profession: 'CEO, Parkview Int.Ltd',
-        comment: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour',
-        imgSrc: '/images/testimonial/user3.svg',
-    },
-]
+];
+
 
 // CAROUSEL SETTINGS
 
@@ -65,7 +60,7 @@ export default class MultipleItems extends Component {
             // centerMode: true,
             slidesToScroll: 2,
             arrows: false,
-            autoplay: false,
+            autoplay: true,
             speed: 500,
             autoplaySpeed: 2000,
             cssEase: "linear",
@@ -73,23 +68,12 @@ export default class MultipleItems extends Component {
                 {
                     breakpoint: 1200,
                     settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: false
-                    }
-                },
-                {
-                    breakpoint: 800,
-                    settings: {
                         slidesToShow: 2,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: false
+
                     }
                 },
                 {
-                    breakpoint: 450,
+                    breakpoint: 600,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
@@ -98,6 +82,7 @@ export default class MultipleItems extends Component {
                     }
                 }
             ]
+
         };
 
 
@@ -107,17 +92,15 @@ export default class MultipleItems extends Component {
 
                     <div className="text-center">
                         <h3 className="text-4xl sm:text-6xl font-bold text-black my-3">See what others are saying.</h3>
-                        <h3 className="text-4xl sm:text-6xl font-bold text-black text-opacity-50 lg:mr-48 my-4">See what others are saying.</h3>
-                        <h3 className="text-4xl sm:text-6xl font-bold text-black text-opacity-25 lg:-mr-32 my-4">See what others are saying.</h3>
                     </div>
 
 
                     <Slider {...settings}>
                         {postData.map((items, i) => (
                             <div key={i} className="relative">
-                                <div className='bg-white test-sha m-3 p-10 my-20 rounded-3xl'>
-                                    <Image src={items.imgSrc} alt={items.imgSrc} width={71} height={71} className="inline-block m-auto absolute test-pos" />
-                                    <h4 className='text-base font-medium text-testColor my-4'>{items.comment}</h4>
+                                <div className='bg-white rounded-3xl shadow-lg m-3 p-10 my-20 hover:bg-darkblue hover:text-white'>
+                                    {/* <Image src={items.imgSrc} alt={items.imgSrc} width={71} height={71} className="inline-block m-auto absolute test-pos" /> */}
+                                    <h4 className='text-base font-medium '>{items.comment}</h4>
                                     <hr style={{ color: "lightgrey" }} />
                                     <div className="flex justify-between">
                                         <div>

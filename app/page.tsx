@@ -12,14 +12,16 @@ import Testimonials from './components/Testimonials/index';
 import Articles from './components/Articles/index';
 import Joinus from './components/Joinus/index';
 import Insta from './components/Insta/index';
+import Contenthead from './components/Contenthead';
 
 
 export default function Home() {
   return (
     <main>
       <Banner />
-      <Aboutus />
       <Dedicated />
+      <Contenthead />
+      <Aboutus />
       <Digital />
       <Beliefs />
       <Wework />

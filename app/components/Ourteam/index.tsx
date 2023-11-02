@@ -1,16 +1,56 @@
-import Image from "next/image";
+"use client"
+import React, { useRef, useEffect } from 'react';
 
+const Index = () => {
+    const videoRef = useRef<HTMLVideoElement | null>(null); // Explicitly specify the type of videoRef
 
-const index = () => {
+    useEffect(() => {
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5,
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting && videoRef.current) {
+                    videoRef.current.play();
+                } else if (videoRef.current) {
+                    videoRef.current.pause();
+                }
+            });
+        }, options);
+
+        if (videoRef.current) {
+            observer.observe(videoRef.current);
+        }
+
+        return () => {
+            if (videoRef.current) {
+                observer.unobserve(videoRef.current);
+            }
+        };
+    }, []);
+
     return (
         <div className='mx-auto max-w-7xl sm:py-4 lg:px-8 m-32'>
-            <h2 className="text-4xl sm:text-65xl font-bold text-center">Our team belives you deserve <br /> only the best.</h2>
-            <h3 className="text-2xl font-medium text-center pt-10 opacity-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br /> eiusmod tempor.</h3>
+            <h2 className="text-4xl sm:text-65xl font-bold text-center">We seek Efficiency <br /> to Serve</h2>
             <div className='grid grid-cols-1 my-16'>
-                <Image src="/images/team/teamimg.png" alt="office-image" height={684} width={1296} />
+                <div className="video-container">
+                    <video
+                        ref={videoRef}
+                        controls
+                        autoPlay
+                        muted
+                        style={{ width: '100%', height: 'auto' }}
+                    >
+                        <source src="/images/team/video.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default index;
+export default Index;

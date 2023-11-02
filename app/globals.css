@@ -195,7 +195,7 @@ html {
 }
 
 .bg-testimonial {
-  background-image: url('/images/wework/elipse.svg'), url('/images/testimonial/boy.svg'), url('/images/testimonial/girl.svg');
+  background-image: url('/images/wework/elipse.svg'),;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: 55%, 84% 26%, 12% 18%;
 }

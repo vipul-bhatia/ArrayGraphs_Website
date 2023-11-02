@@ -13,15 +13,14 @@ const FAQ = () => {
                         {({ open }) => (
                             <>
                                 <Disclosure.Button className="flex w-full justify-between rounded-lg px-4 py-2 text-left text-2xl font-medium">
-                                    <span>Can you design my site?</span>
+                                    <span>Can 3D models be designed by Array Graphs?</span>
                                     <ChevronUpIcon
                                         className={`${open ? 'rotate-180 transform' : ''
                                             } h-5 w-5 text-purple-500`}
                                     />
                                 </Disclosure.Button>
                                 <Disclosure.Panel className="px-4 pt-4 pb-2 text-base text-black font-normal opacity-50">
-                                    Craven omni memoria patriae zombieland clairvius narcisse <br /> religionis
-                                    sunt diri undead historiarum. Golums, zombies unrelenting <br /> et Raimi fascinati beheading.
+                                Yes, Array Graphs specializes in 3D modeling and design, offering creative and detailed solutions<br/> for various industries and applications.
                                 </Disclosure.Panel>
                             </>
                         )}
@@ -33,15 +32,14 @@ const FAQ = () => {
                         {({ open }) => (
                             <>
                                 <Disclosure.Button className="flex w-full justify-between rounded-lg px-4 py-2 text-left text-2xl font-medium">
-                                    <span>Can you code my site?</span>
+                                    <span>Can Array Graphs design websites and make them operational?</span>
                                     <ChevronUpIcon
                                         className={`${open ? 'rotate-180 transform' : ''
                                             } h-5 w-5 text-purple-500`}
                                     />
                                 </Disclosure.Button>
                                 <Disclosure.Panel className="px-4 pt-4 pb-2 text-base text-black font-normal opacity-50">
-                                    Craven omni memoria patriae zombieland clairvius narcisse <br /> religionis
-                                    sunt diri undead historiarum. Golums, zombies unrelenting <br /> et Raimi fascinati beheading.
+                                Array Graphs primarily focuses on graphic design and 3D modeling, and may not offer web development services.<br/> However, they can collaborate with web development professionals to bring your website to life.
                                 </Disclosure.Panel>
                             </>
                         )}
@@ -53,15 +51,14 @@ const FAQ = () => {
                         {({ open }) => (
                             <>
                                 <Disclosure.Button className="flex w-full justify-between rounded-lg px-4 py-2 text-left text-2xl font-medium">
-                                    <span>Where are you located?</span>
+                                    <span>Can Array Graphs restore damaged photographs?</span>
                                     <ChevronUpIcon
                                         className={`${open ? 'rotate-180 transform' : ''
                                             } h-5 w-5 text-purple-500`}
                                     />
                                 </Disclosure.Button>
                                 <Disclosure.Panel className="px-4 pt-4 pb-2 text-base text-black font-normal opacity-50">
-                                    Craven omni memoria patriae zombieland clairvius narcisse <br /> religionis
-                                    sunt diri undead historiarum. Golums, zombies unrelenting <br /> et Raimi fascinati beheading.
+                                While our primary expertise lies in graphic design and 3D modeling,<br/> We also offer photo restoration services as part of our design portfolio.
                                 </Disclosure.Panel>
                             </>
                         )}

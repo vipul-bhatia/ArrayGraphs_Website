@@ -13,34 +13,29 @@ interface DataType {
 
 const postData: DataType[] = [
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
-        imgSrc: '/images/wework/avatar.svg',
+        profession: '',
+        name: 'Detailing Cartel',
+        imgSrc: '/images/wework/avatar.jpeg',
     },
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
-        imgSrc: '/images/wework/avatar3.svg',
+        profession: '',
+        name: 'Business Labs.',
+        imgSrc: '/images/wework/avatar1.jpg',
     },
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
-        imgSrc: '/images/wework/avatar4.svg',
+        profession: '',
+        name: 'Neelam Makeover',
+        imgSrc: '/images/wework/avatar2.png',
     },
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
-        imgSrc: '/images/wework/avatar.svg',
+        profession: '',
+        name: 'The Meal Master',
+        imgSrc: '/images/wework/avatar3.jpg',
     },
     {
-        profession: 'Co-founder',
-        name: 'John Doe',
-        imgSrc: '/images/wework/avatar3.svg',
-    },
-    {
-        profession: 'Co-founder',
-        name: 'John Doe',
-        imgSrc: '/images/wework/avatar4.svg',
+        profession: '',
+        name: 'AI Pro Stack Solutions',
+        imgSrc: '/images/wework/avatar4.jpeg',
     },
 ]
 
@@ -51,45 +46,38 @@ export default class MultipleItems extends Component {
 
     render() {
         const settings = {
-            dots: false,
-            infinite: true,
-            slidesToShow: 5,
-            // centerMode: true,
-            slidesToScroll: 1,
-            arrows: false,
-            autoplay: true,
-            speed: 4000,
-            autoplaySpeed: 2000,
-            cssEase: "linear",
-            responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: false
-                    }
-                },
-                {
-                    breakpoint: 800,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: false
-                    }
-                },
-                {
-                    breakpoint: 450,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: false
-                    }
-                }
-            ]
+          dots: false,
+          infinite: true,
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          arrows: false,
+          autoplay: true,
+          speed: 4000,
+          autoplaySpeed: 2000,
+          cssEase: "linear",
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 3,
+
+              },
+            },
+            {
+              breakpoint: 800,
+              settings: {
+                slidesToShow: 2,
+
+              },
+            },
+            {
+              breakpoint: 450,
+              settings: {
+                slidesToShow: 1,
+
+              },
+            },
+          ],
         };
 
 
@@ -110,7 +98,7 @@ export default class MultipleItems extends Component {
                     {postData.map((items, i) => (
                         <div key={i}>
                             <div className='bg-white m-3 py-14 my-10 text-center shadow-xl rounded-3xl'>
-                                <div className='relative'>
+                                <div className='relative w-60 h-60'>
                                     <Image src={items.imgSrc} alt="gaby" width={182} height={182} className="inline-block m-auto" />
                                     {/* <Image src={'/images/wework/linkedin.svg'} alt="greenbg" width={120} height={120} className=" absolute inline-block position-linkedin" /> */}
                                 </div>
