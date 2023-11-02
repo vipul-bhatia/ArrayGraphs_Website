@@ -9,7 +9,7 @@ const Insta = () => {
 
                 <div className="mx-auto imageContainer">
                     <Image src="/images/insta/insta5.jpeg" width={306} height={306} alt="instaOne" />
-                    <Link href={"https://instagram.com"} target="_blank">
+                    <Link href={"https://www.instagram.com/arraygraphs/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"} target="_blank">
                         <button
                             className="hidden text-white font-semibold absolute z-10"
                             style={{
@@ -24,7 +24,7 @@ const Insta = () => {
 
                 <div className="mx-auto imageContainer">
                     <Image src="/images/insta/insta6.jpeg" width={306} height={306} alt="instaTwo" />
-                    <Link href={"https://instagram.com"} target="_blank">
+                    <Link href={"https://www.instagram.com/arraygraphs/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"} target="_blank">
                         <button
                             className="hidden text-white font-semibold absolute z-10"
                             style={{
@@ -39,7 +39,7 @@ const Insta = () => {
 
                 <div className="mx-auto imageContainer">
                     <Image src="/images/insta/insta7.jpeg" width={306} height={306} alt="instaThree" />
-                    <Link href={"https://instagram.com"} target="_blank">
+                    <Link href={"https://www.instagram.com/arraygraphs/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"} target="_blank">
                         <button
                             className="hidden text-white font-semibold absolute z-10"
                             style={{
@@ -54,7 +54,7 @@ const Insta = () => {
 
                 <div className="mx-auto imageContainer">
                     <Image src="/images/insta/insta8.jpeg" width={306} height={306} alt="instaFour" />
-                    <Link href={"https://instagram.com"} target="_blank">
+                    <Link href={"https://www.instagram.com/arraygraphs/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"} target="_blank">
                         <button
                             className="hidden text-white font-semibold absolute z-10"
                             style={{

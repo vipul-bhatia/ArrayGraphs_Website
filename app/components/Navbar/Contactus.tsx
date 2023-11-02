@@ -1,7 +1,10 @@
 "use client"
 import { Dialog, Transition } from '@headlessui/react';
-import { Fragment, useState } from 'react';
+import { Fragment} from 'react';
 import Link from 'next/link';
+
+import React, { useState } from 'react';
+import { db } from '../firebase/config';
 
 
 const Contactusform = () => {
@@ -24,9 +27,21 @@ const Contactusform = () => {
     }
 
     // FORM SUBMIT
-    const handleSubmit = (event: { preventDefault: () => void; }) => {
+    const handleSubmit = (event: { preventDefault: () => void; }) => async (e: any) => {
         event.preventDefault();
-        // handle form submission
+        try {
+            await db.collection('arraygraphs_contactus').add({ name: inputValues.input1, email: inputValues.input2, message: inputValues.input3 });
+            setInputValues({
+                input1: '',
+                input2: '',
+                input3: ''
+            });
+            setIsOpen(false)
+        }
+        catch (error) {
+            console.error('Error adding email: ', error);
+            
+        }
     };
 
     const isDisabled = Object.values(inputValues).some((value) => value === '');
