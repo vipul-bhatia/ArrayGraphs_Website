@@ -38,7 +38,7 @@ const Join = () => {
 
                 <div className="text-center">
                     <h3 className="text-blue text-lg font-normal tracking-widest">JOIN US</h3>
-                    <h2 className="text-4xl sm:text-6xl font-bold my-6 leading-10"> Uplift Your Business To <br /> A New Level</h2>
+                    <h2 className="text-4xl sm:text-6xl font-bold my-6 leading-10"> UPLIFT YOUR BUSINESS TO<br /> A NEW LEVEL</h2>
                     <p className="text-lightblack text-base font-normal">Our sales team will get back to you as soon as possible.</p>
                 </div>
 

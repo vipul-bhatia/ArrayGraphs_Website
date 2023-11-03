@@ -23,19 +23,19 @@ const postData: DataType[] = [
     {
         name: "Priyam Sekra",
         profession: 'CEO, AIProStack Solutions',
-        comment: 'ArrayGraphs has been instrumental in our success. Their dedication to delivering high-quality marketing is commendable.',
+        comment: 'ArrayGraphs has been instrumental in our success. Their dedication to delivering high-quality marketing is commendable. They became a part of our team.',
         imgSrc: '/images/testimonial/user2.svg',
     },
     {
         name: "Shivam Vijayvargia",
         profession: 'Software Engineer',
-        comment: 'I appreciate the innovative solutions provided by ArrayGraphs. Their expertise in designing & marketing is outstanding.',
+        comment: 'I appreciate the innovative solutions provided by ArrayGraphs. Their expertise in designing & marketing is outstanding. They are a great team to work with.',
         imgSrc: '/images/testimonial/user3.svg',
     },
     {
         name: "Deepak Kumar",
         profession: 'Lead Architect',
-        comment: 'ArrayGraphs has consistently met our design needs, contributing to the quality of our products.Their expertise is unbeatable.',
+        comment: 'ArrayGraphs has consistently and significantly satisfied our design requirements, greatly enhancing the quality of our products. They are a great team to work with.',
         imgSrc: '/images/testimonial/user1.svg',
     },
     {

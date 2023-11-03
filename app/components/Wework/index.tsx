@@ -30,7 +30,7 @@ const postData: DataType[] = [
     {
         profession: '',
         name: 'The Meal Master',
-        imgSrc: '/images/wework/avatar3.jpg',
+        imgSrc: '/images/wework/avatar3.jpeg',
     },
     {
         profession: '',
@@ -96,7 +96,7 @@ export default class MultipleItems extends Component {
                 <Slider {...settings}>
                     {postData.map((items, i) => (
                         <div key={i}>
-                            <div className='bg-white m-3 pt-16 pl-6 shadow-xl rounded-3xl'>
+                            <div className='bg-white m-3 pt-16 pl-12 shadow-xl rounded-3xl'>
                                 <div className='relative w-60 h-60'>
                                     <Image src={items.imgSrc} alt="gaby" width={182} height={182} className="inline-block " />
                                     {/* <Image src={'/images/wework/linkedin.svg'} alt="greenbg" width={120} height={120} className=" absolute inline-block position-linkedin" /> */}

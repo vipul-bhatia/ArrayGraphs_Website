@@ -29,6 +29,14 @@ const Navbar = () => {
 
     const [isOpen, setIsOpen] = React.useState(false);
 
+    const scrolltojoinus = () => {
+        const newsletterSection = document.getElementById("joinus");
+    
+        if (newsletterSection) {
+          newsletterSection.scrollIntoView({ behavior: "smooth" });
+        }
+      };
+
     return (
         <Disclosure as="nav" className="navbar">
             <>
@@ -62,7 +70,7 @@ const Navbar = () => {
                                 </div>
 
                             </div>
-                            <button className='hidden lg:flex justify-end text-xl font-semibold bg-transparent py-4 px-6 lg:px-12 navbutton rounded-full hover:bg-navyblue hover:text-white'>Contact us</button>
+                            <button onClick={scrolltojoinus}  className='hidden lg:flex justify-end text-xl font-semibold bg-transparent py-4 px-6 lg:px-12 navbutton rounded-full hover:bg-navyblue hover:text-white'>Contact us</button>
 
                         </div>
 
