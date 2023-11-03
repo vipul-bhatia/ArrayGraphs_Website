@@ -19,8 +19,7 @@ export default function Home() {
   return (
     <main>
       <Banner />
-      <Dedicated />
-      <Contenthead />
+      {/* <Contenthead /> */}
       <Aboutus />
       <Digital />
       <Beliefs />
@@ -30,6 +29,7 @@ export default function Home() {
       <Manage />
       <FAQ />
       <Testimonials />
+      <Dedicated />
       <Articles />
       <Joinus />
       <Insta />

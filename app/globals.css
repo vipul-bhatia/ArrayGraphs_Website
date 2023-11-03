@@ -151,7 +151,7 @@ html {
 }
 
 .bg-beliefs {
-  background-image: url('/images/beliefs/swirls.svg');
+  /* background-image: url('/images/beliefs/swirls.svg'); */
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: contain;
@@ -236,7 +236,7 @@ html {
 }
 
 .bg-joinus {
-  background-image: url('/images/joinus/horn.svg'), url('/images/joinus/paint.svg');
+  /* background-image: url('/images/joinus/horn.svg'), url('/images/joinus/paint.svg'); */
   background-repeat: no-repeat, no-repeat;
   background-position: 84% 109%, 12% 18%;
 }

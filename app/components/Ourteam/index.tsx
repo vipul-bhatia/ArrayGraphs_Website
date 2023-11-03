@@ -34,7 +34,7 @@ const Index = () => {
 
     return (
         <div className='mx-auto max-w-7xl sm:py-4 lg:px-8 m-32'>
-            <h2 className="text-4xl sm:text-65xl font-bold text-center">We seek Efficiency <br /> to Serve</h2>
+            <h2 className="text-4xl sm:text-65xl font-bold text-center">WE SEEK EFFICIENCY <br />TO SERVE</h2>
             <div className='grid grid-cols-1 my-16'>
                 <div className="video-container">
                     <video

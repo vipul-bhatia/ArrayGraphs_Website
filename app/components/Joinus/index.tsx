@@ -49,7 +49,7 @@ const Join = () => {
                             <input 
                             type="name"
                             className="my-4 py-4 sm:pl-6 lg:text-xl text-black sm:rounded-full bg-lightgrey pl-1 focus:outline-none bg-emailbg focus:text-black"
-                            placeholder="Your name" 
+                            placeholder="Name" 
                             autoComplete="off" 
                             value={name}
                             onChange={e => setName(e.target.value)}
@@ -58,7 +58,7 @@ const Join = () => {
                         <div>
                             <input type="email" 
                             className="my-4 py-4 sm:pl-6 lg:text-xl text-black sm:border-l border-linegrey bg-lightgrey focus:outline-none bg-emailbg focus:text-black"
-                             placeholder="Your email" 
+                             placeholder="Email" 
                              autoComplete="off" 
                              value={email}
                              onChange={e => setEmail(e.target.value)}/>
@@ -66,7 +66,7 @@ const Join = () => {
                         <div>
                             <input type="tel" 
                             className="my-4 py-4 sm:pl-6 lg:text-xl text-black sm:border-l border-linegrey bg-lightgrey focus:outline-none bg-emailbg focus:text-black" 
-                            placeholder="Your contact no." 
+                            placeholder="Contact No." 
                             autoComplete="off" 
                             value={contact}
                             onChange={e => setContact(e.target.value)}/>

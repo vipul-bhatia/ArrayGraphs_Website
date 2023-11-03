@@ -81,8 +81,8 @@ export default class MultipleItems extends Component {
                 <div className='mx-auto max-w-7xl sm:py-4 lg:px-8 '>
 
                     <div className="text-center">
-                        <h3 className="text-blue text-lg font-normal tracking-widest">ARTICLES</h3>
-                        <h3 className="text-4xl sm:text-6xl font-bold">Our Latest Feed</h3>
+                    
+                        <h3 className="text-4xl sm:text-6xl font-bold">OUR LATEST FEED</h3>
                     </div>
 
 

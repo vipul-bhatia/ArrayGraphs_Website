@@ -39,7 +39,7 @@ const Navbar = () => {
                             {/* LOGO */}
 
                             <div className="flex flex-shrink-0 items-center border-right">
-                                                           <img src="/images/banner/logo.jpeg" className="mx-auto w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-16 lg:h-16" alt="" />
+                            <img src="/images/banner/logo.png" height={150} width={150} alt="" />
                             </div>
 
                             {/* LINKS */}
@@ -62,12 +62,10 @@ const Navbar = () => {
                                 </div>
 
                             </div>
-
-                            <Link href="/" className='text-2xl sm:text-4xl font-semibold text-black'>
-                                    Arraygraphs
-                                </Link>
+                            <button className='hidden lg:flex justify-end text-xl font-semibold bg-transparent py-4 px-6 lg:px-12 navbutton rounded-full hover:bg-navyblue hover:text-white'>Contact us</button>
 
                         </div>
+
 
                         {/* DRAWER FOR MOBILE VIEW */}
 
