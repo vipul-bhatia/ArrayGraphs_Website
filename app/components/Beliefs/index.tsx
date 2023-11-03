@@ -13,18 +13,18 @@ interface DataType {
 const beliefsData: DataType[] = [
     {
         heading: "Matt Painting",
-        description: "Elevate your visuals with expert matte painting techniques, adding depth and realism to your scenes through intricate hand-painted or digital artistry.",
+        description: "Enhance visuals through expert matte painting for added depth and realism.",
         imgSrc: "/images/beliefs/Durga.MP4",
     },
     {
         heading: "Motion Tracking",
-        description: "Seamlessly integrate computer-generated elements into live-action footage using precise motion tracking, enhancing the authenticity of your visual effects.",
+        description: "Seamlessly merge CGI elements into live-action footage with precision motion tracking.",
         imgSrc: "/images/beliefs/tv.mp4",
     },
     {
         heading: "Product Animation",
         description: "Enhance your projects with stunning visual effects that captivate your audience.",
-        imgSrc: "/images/beliefs/Earbuds.mp4",
+        imgSrc: "/images/beliefs/Apex.mp4",
     },
     {
         heading: "Motion Graphics",
@@ -48,7 +48,7 @@ const beliefsData: DataType[] = [
     },
     {
         heading: "Screen Replacement",
-        description: "Transform on-screen displays with flawless screen replacement, allowing for dynamic storytelling and immersive interactions in your videos and films.",
+        description: "Elevate storytelling with seamless screen replacement for dynamic displays.",
         imgSrc: "/images/beliefs/film_production.mp4",
     },
 ];
