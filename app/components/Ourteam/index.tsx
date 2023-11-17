@@ -37,16 +37,18 @@ const Index = () => {
             <h2 className="text-4xl sm:text-65xl font-bold text-center">WE SEEK EFFICIENCY <br />TO SERVE</h2>
             <div className='grid grid-cols-1 my-16'>
                 <div className="video-container">
-                    <video
-                        ref={videoRef}
-                        controls
-                        autoPlay
-                        muted
-                        style={{ width: '100%', height: 'auto' }}
-                    >
-                        <source src="/images/team/video.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+                <video
+    ref={videoRef}
+    controls
+    autoPlay
+    muted
+    loop  // Add the loop attribute
+    style={{ width: '100%', height: 'auto' }}
+>
+    <source src="/images/team/video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+</video>
+
                 </div>
             </div>
         </div>

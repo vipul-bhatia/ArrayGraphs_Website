@@ -42,9 +42,9 @@ const beliefsData: DataType[] = [
         imgSrc: "/images/beliefs/video_editing.mp4",
     },
     {
-        heading: "Reels",
-        description: "Create engaging and memorable short videos with our reel production services.",
-        imgSrc: "/images/beliefs/reel.mp4",
+        heading: "Logo Animation",
+        description: "Bring your brand to life with a stunning logo animation that will leave a lasting impression.",
+        imgSrc: "/images/beliefs/logo_animation.mp4",
     },
     {
         heading: "Screen Replacement",
