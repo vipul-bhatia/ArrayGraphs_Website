@@ -112,7 +112,7 @@ const Join = () => {
                         <div className="mt-4">
                             <button
                                 type="submit"
-                                className="joinButton w-full text-xl text-white font-semibold text-center rounded-full bg-blue hover:bg-btnblue py-4"
+                                className="joinButton w-full text-xl text-lightblack bg-blue-600 font-semibold text-center rounded-full bg-blue hover:bg-btnblue py-4"
                             >
                                 Join!
                             </button>
