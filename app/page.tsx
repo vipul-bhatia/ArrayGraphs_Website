@@ -14,7 +14,7 @@ import Joinus from './components/Joinus/index';
 import Insta from './components/Insta/index';
 import Contenthead from './components/Contenthead';
 import { Team } from './components/Teamgrid/teamgrid';
-import { Gallery } from './components/Gallery/Gallery';
+import { Gallery } from './components/Gallery/gallery';
 
 
 export default function Home() {
